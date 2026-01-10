@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "RPM Vault Mobile",
+    "slug": "rpm-vault-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logos/rpm-vault-app-logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "main": "App.tsx",
+    "splash": {
+      "image": "./assets/logos/rpm-vault.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ballioz.rpmvault",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.ballioz.rpmvault",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logos/rpm-vault-app-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/logos/rpm-vault-app-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "03dc0e94-ae29-4516-bf7f-f2e682c7d96e"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "rpm-vault-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RPM Vault - Motorcycle maintenance tracking system monorepo",
+  "scripts": {
+    "dev": "pnpm --parallel --stream run dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:mobile": "pnpm --filter mobile start",
+    "mobile": "pnpm --filter mobile start",
+    "build": "pnpm --recursive run build",
+    "build:frontend": "pnpm --filter frontend build",
+    "start:frontend": "pnpm --filter frontend start",
+    "android": "pnpm --filter mobile android",
+    "ios": "pnpm --filter mobile ios",
+    "lint": "pnpm --recursive run lint",
+    "lint:frontend": "pnpm --filter frontend lint",
+    "clean": "pnpm --recursive exec rm -rf node_modules dist .next",
+    "install:all": "pnpm install"
+  },
+  "keywords": [
+    "monorepo",
+    "motorcycle",
+    "maintenance",
+    "nextjs",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
